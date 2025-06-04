@@ -21,6 +21,7 @@ struct ForecastView: View {
         DayForecast(day: "Sun", isRainy: true, high: 60, low: 40)
       }
     }
+    Spacer()
   }
 }
 

@@ -3,16 +3,34 @@
 //  theTutorial
 //
 //  Created by 1qjc on 6/4/25.
-//
+
 
 import SwiftData
 import SwiftUI
 
+let grandientColors: [Color] = [
+  .gradientTop,
+  .gradientBottom
+]
+
 struct ContentView: View {
   var body: some View {
-    ForecastView()
+    TabView {
+      ChatView()
+      ForecastView()
+      WelcomePage()
+      FeaturesPage()
+      DiceRollerView()
+      PickAPalView()
+    }
+    .background(Gradient(colors: grandientColors))
+    .tabViewStyle(.page)
+    .foregroundStyle(.white)
+
   }
 }
+
 #Preview {
   ContentView()
 }
+
