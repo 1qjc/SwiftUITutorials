@@ -19,7 +19,6 @@ struct WelcomePage: View {
             .font(.system(size: 70))
             .foregroundStyle(.white)
         }
-
         Text("Welcom to 1qjc")
           .font(.title)
           .fontWeight(.semibold)
@@ -34,7 +33,9 @@ struct WelcomePage: View {
 //          .border(.black, width: 1.5)
       }
 //      .border(.orange, width: 1.5)
+      .frame(maxWidth:.infinity, maxHeight: .infinity)
       .padding()
+      .background(Gradient(colors: grandientColors))
 //      .border(.purple, width: 1.5)
     }
 }

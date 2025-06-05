@@ -25,6 +25,7 @@ struct FeaturesPage: View {
         
       }
       .padding()
+      .background(Gradient(colors: grandientColors))
     }
 }
 
