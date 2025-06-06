@@ -1,5 +1,5 @@
 //
-//  FeaturesPage.swift
+//  FeaturesView.swift
 //  TheTutorial
 //
 //  Created by 1qjc on 6/4/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FeaturesPage: View {
+struct FeaturesView: View {
     var body: some View {
       VStack(spacing: 30) {
         Text("Features")
@@ -30,7 +30,7 @@ struct FeaturesPage: View {
 }
 
 #Preview {
-  FeaturesPage()
+  FeaturesView()
     .frame(maxHeight: .infinity)
     .background(Gradient(colors: grandientColors))
     .foregroundStyle(.white)

@@ -1,5 +1,5 @@
 //
-//  WelcomePage.swift
+//  WelcomeView.swift
 //  TheTutorial
 //
 //  Created by 1qjc on 6/4/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WelcomePage: View {
+struct WelcomeView: View {
     var body: some View {
       VStack {
         ZStack {
@@ -41,5 +41,5 @@ struct WelcomePage: View {
 }
 
 #Preview {
-    WelcomePage()
+    WelcomeView()
 }

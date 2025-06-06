@@ -10,7 +10,6 @@ import SwiftUI
 
 struct BirthdayView: View {
   @Query(sort: \Friend.birthday) private var friends: [Friend]
-
   @Environment(\.modelContext) private var context
 
   @State private var newName = ""
@@ -54,14 +53,11 @@ struct BirthdayView: View {
         .padding()
         .background(.bar)
       }
-      .task {
-//        context.insert(Friend(name: "Elton Lin", birthday: .now))
-//        context.insert(Friend(name: "Jenny Court", birthday: Date(timeIntervalSince1970: 0)))
-      }
     }
   }
 }
 
 #Preview {
-  BirthdayView().modelContainer(for: Friend.self, inMemory: true)
+  BirthdayView()
+    .modelContainer(SampleData.shared.modelContainer)
 }

@@ -14,5 +14,7 @@ struct TheTutorialApp: App {
     WindowGroup {
       ContentView()
     }
+    .modelContainer(for: [Movie.self, Friend.self])
+
   }
 }
